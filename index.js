@@ -18,4 +18,4 @@ function determinarTriangulo(){
     }
 }
 
-document.location.href = "/?#"
+document.location.href = "/calidad-trabajo/?#"
