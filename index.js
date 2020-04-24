@@ -2,6 +2,7 @@ function determinarTriangulo(){
     var ladoA = document.getElementById("ladoA").value;
     var ladoB = document.getElementById("ladoB").value;
     var ladoC = document.getElementById("ladoC").value;
+    document.getElementById("resultado").innerHTML="";
     if(!ladoA || !ladoB || !ladoC){
         document.getElementById("resultado").innerHTML="Ingrese datos.";
     }
