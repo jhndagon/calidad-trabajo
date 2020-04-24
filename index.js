@@ -2,10 +2,12 @@ function determinarTriangulo(){
     var ladoA = document.getElementById("ladoA").value;
     var ladoB = document.getElementById("ladoB").value;
     var ladoC = document.getElementById("ladoC").value;
-    if(ladoA || ladoB || ladoC){
-        if(ladoA < 0 || ladoB < 0 || ladoC < 0){
-            document.getElementById("resultado").innerHTML="Ingrese valores positivos.";
-        }
+    if(!ladoA || !ladoB || !ladoC){
+        document.getElementById("resultado").innerHTML="Ingrese datos.";
+    }
+    else if(ladoA <= 0 || ladoB <= 0 || ladoC <= 0){
+        document.getElementById("resultado").innerHTML="Ingrese valores mayores que 0.";
+    }else {
         if(ladoA == ladoB || ladoB == ladoC || ladoA == ladoC){
             if(ladoA == ladoB && ladoA== ladoC){
                 document.getElementById("resultado").innerHTML="Es un triángulo equilatero.";
